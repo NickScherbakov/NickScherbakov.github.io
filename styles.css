@@ -476,17 +476,61 @@ footer {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    #hero h2 {
+        font-size: 3rem;
+    }
+
+    .about-content {
+        gap: 3rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    #hero {
+        padding: 120px 0 80px;
+    }
+
     #hero h2 {
         font-size: 2.5rem;
+        line-height: 1.1;
     }
 
     #hero p {
         font-size: 1.1rem;
+        max-width: 100%;
+    }
+
+    nav .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav h1 {
+        margin-bottom: 1rem;
     }
 
     nav ul {
         gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        transition: var(--transition);
+    }
+
+    nav ul li a:hover {
+        background: rgba(255,255,255,0.1);
     }
 
     #about .container {
@@ -494,15 +538,176 @@ footer {
         gap: 2rem;
     }
 
+    .about-stats {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    .stat {
+        padding: 1.5rem;
+        flex: 1;
+    }
+
+    .stat h3 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
     section h2 {
         font-size: 2rem;
+        margin-bottom: 2rem;
     }
 
     .project-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .project {
+        padding: 1.5rem;
     }
 
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .skill-card {
+        padding: 1.5rem;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .testimonial {
+        padding: 2rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-item {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    nav ul {
+        gap: 0.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content {
+        gap: 1.5rem;
+    }
+
+    .stat h3 {
+        font-size: 1.5rem;
+    }
+
+    .stat p {
+        font-size: 0.9rem;
+    }
+
+    .skill-card h4 {
+        font-size: 1.1rem;
+    }
+
+    .skill-card p {
+        font-size: 0.9rem;
+    }
+
+    .testimonial p {
+        font-size: 0.95rem;
+        padding-left: 1.5rem;
+    }
+
+    .testimonial::before {
+        font-size: 3rem;
+        left: 1rem;
+    }
+
+    .contact-item h4 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        padding: 0 8px;
+    }
+
+    #hero {
+        padding: 100px 0 60px;
+    }
+
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+
+    #hero p {
+        font-size: 0.95rem;
+    }
+
+    nav h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    .project {
+        padding: 1rem;
+    }
+
+    .skill-card {
+        padding: 1rem;
+    }
+
+    .testimonial {
+        padding: 1.5rem;
+    }
+
+    .contact-item {
+        padding: 1rem;
     }
 }
