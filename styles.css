@@ -538,6 +538,11 @@ footer {
         gap: 2rem;
     }
 
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
     .about-stats {
         flex-direction: row;
         justify-content: space-around;
@@ -709,5 +714,9 @@ footer {
 
     .contact-item {
         padding: 1rem;
+    }
+
+    .about-content {
+        gap: 1rem;
     }
 }
